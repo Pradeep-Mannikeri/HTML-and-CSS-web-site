@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different menu Bars designs on one page</title>
+
+    <!-- Font awesome CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- 1st menubar starts here -->
+    <section id="menuOne">
+        <div class="container_1">
+            <div class="logo_1">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <nav>
+                <ul class="menu-list_1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">F&Qs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+    </section>
+
+    <!-- 2nd menubar starts here -->
+
+    <section id="menutwo">
+        <div class="container_2">
+            <div class="logo_2">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <nav>
+                <ul class="menu-list_2">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">F&Qs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="btn_2 btn">
+                <a href="#" class="blue-border">logo</a>
+                <a href="#" class="blue-background">Sine-up</a>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- 3rd menubar starts here -->
+    <section id="menuthree">
+        <div class="container_3">
+            <div class="logo_3">
+                <img src="./img/logo.svg" alt="">
+                <nav>
+                    <ul class="menu-list_3">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">F&Qs</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="btn_3 btn">
+                <form class="search">
+                    <input class="search-block" type="search" placeholder="search" aria-label="search">
+                </form>
+                <a href="#" class="blue-border">logo</a>
+                <a href="#" class="blue-yello">Sine-up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4th menubar starts here -->
+
+    <section id="menufour">
+        <div class="container_4">
+            <div class="logo_4">
+                <img src="./img/logo.svg" alt="">
+                <nav>
+                    <ul class="menu-list_4">
+                        <li><a href="#" class="active">Overview</a></li>
+                        <li><a href="#">Inventory</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="btn_4 btn">
+                <form class="search">
+                    <input class="search-block" type="search" placeholder="search" aria-label="search">
+                </form>
+                <div class="img-dropdown">
+                    <img src="./img/profile_img.jpg" alt="">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-caret-down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">New Project</a>
+                            <a href="#">Setting</a>
+                            <a href="#">Profile</a>
+                            <hr>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- 5th menubar start here -->
+    <section id="menufive">
+        <div class="container_5">
+            <nav>
+                <ul class="menu-list_5">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">F&Qs</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="btn_5 btn">
+                <a href="#" class="blue-border_5">logo</a>
+                <a href="#" class="blue-background_5">Sine-up</a>
+            </div>
+        </div>
+        <!-- <hr class="hr-five"> -->
+        <div class="logo-block-section">
+            <div class="logo-form">
+                <div class="logo-5">
+                    <img src="./img/logo.svg" alt="">
+                    <a href="#">Company Name</a>
+                </div>
+                
+                <form class="search-5">
+                    <input class="search-block-5" type="search" placeholder="search" aria-label="search">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
